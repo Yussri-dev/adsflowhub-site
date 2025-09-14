@@ -1,91 +1,163 @@
 <!doctype html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>AdsFlowHub • Hub d’offres</title>
-  <meta name="description" content="Choisissez une page et commencez. Les paramètres UTM et subid sont propagés automatiquement.">
+  <title>AdsFlowHub • Curated & verified offers</title>
+  <meta name="description" content="Pick a page. UTM and subid parameters are automatically passed to your partner redirects.">
+  <meta name="theme-color" content="#2563eb" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0b1220" media="(prefers-color-scheme: dark)">
   <meta name="color-scheme" content="light dark">
+  <link rel="preload" href="/assets/css/styles.css" as="style">
   <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 <body>
-  <a class="skip-link" href="#main">Aller au contenu</a>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- Cookies (démo) -->
+  <!-- Cookie banner (demo) -->
   <div class="cc" id="cc" hidden>
-    <div class="cc-inner">
-      <div>Cookies pour expérience & mesure d’audience. <a class="link" href="/legal/cookies.html">En savoir plus</a>.</div>
+    <div class="cc-inner" role="dialog" aria-labelledby="cc-title" aria-describedby="cc-desc">
+      <div id="cc-desc">
+        Cookies are used for experience & analytics.
+        <a class="link" href="/legal/cookies.html">Learn more</a>.
+      </div>
       <div class="actions">
-        <button class="btn btn-secondary" id="cc-decline" type="button">Refuser</button>
-        <button class="btn" id="cc-accept" type="button">Accepter</button>
+        <button class="btn btn-secondary" id="cc-decline" type="button">Decline</button>
+        <button class="btn" id="cc-accept" type="button">Accept</button>
       </div>
     </div>
   </div>
 
   <header class="hero" role="banner">
     <div class="wrap hero__inner">
-      <div class="brand"><span class="brand-logo" aria-hidden="true"></span><strong>AdsFlowHub</strong></div>
-      <h1 class="title">Bienvenue — <span class="grad">sélection d’offres vérifiées</span></h1>
-      <p class="sub">Sélectionnez une page. <code>UTM</code> et <code>subid</code> seront transmis à vos redirections partenaires.</p>
+      <div class="brand">
+        <span class="brand-logo" aria-hidden="true"></span>
+        <strong>AdsFlowHub</strong>
+      </div>
+      <h1 class="title">
+        Welcome — <span >curated, verified offers</span>
+      </h1>
+      <p class="sub">
+        Pick a page. <code>UTM</code> and <code>subid</code> will be passed to your partner redirects.
+      </p>
     </div>
   </header>
 
   <main id="main" class="wrap">
-    <section aria-label="Liens" class="cards">
-      <a class="card aff-link" href="/rewards/fr-amazon-giftcards/" aria-label="Cartes cadeaux Amazon, URL locker">
+    <section aria-label="Links" class="cards">
+
+      <!-- Card 1 -->
+      <article class="card" tabindex="0">
         <div class="card-icon card-icon--gift" aria-hidden="true">
           <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.6">
-            <path d="M20 12v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-8"/><path d="M4 8h16v4H4zM12 22V8"/>
-            <path d="M12 8c1.5-2.5-.5-4-2-4s-2.5 1.5-2 3 4 1 4 1zM12 8c-1.5-2.5.5-4 2-4s2.5 1.5 2 3-4 1-4 1z"/>
+            <path d="M20 12v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-8" />
+            <path d="M4 8h16v4H4zM12 22V8" />
+            <path d="M12 8c1.5-2.5-.5-4-2-4s-2.5 1.5-2 3 4 1 4 1zM12 8c-1.5-2.5.5-4 2-4s2.5 1.5 2 3-4 1-4 1z" />
           </svg>
         </div>
         <div class="card-body">
-          <h2>Cartes cadeaux Amazon <span class="muted">(URL locker)</span></h2>
-          <p>Pré-lander + divulgation claire. Non affilié à Amazon.</p>
+          <h2>Amazon Gift Cards <span class="badge">URL locker</span></h2>
+          <p>Pre-lander + clear disclosure. Not affiliated with Amazon.</p>
+          <div class="card-actions">
+            <a class="btn btn-card aff-link" href="/rewards/fr-amazon-giftcards/" aria-label="Open Amazon Gift Cards page">
+              Open page
+            </a>
+          </div>
         </div>
-      </a>
+      </article>
 
-      <a class="card aff-link" href="/apps/vpn-checker/" aria-label="VPN Checker, Link locker">
+      <!-- Card 2 -->
+      <article class="card" tabindex="0">
         <div class="card-icon card-icon--shield" aria-hidden="true">
           <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.6">
-            <path d="M12 2l7 3v6c0 5-3.5 9-7 11-3.5-2-7-6-7-11V5z"/><path d="M9 12l2 2 4-4"/>
+            <path d="M12 2l7 3v6c0 5-3.5 9-7 11-3.5-2-7-6-7-11V5z" />
+            <path d="M9 12l2 2 4-4" />
           </svg>
         </div>
         <div class="card-body">
-          <h2>VPN Checker <span class="muted">(Link locker)</span></h2>
-          <p>Flux utilitaire/app → lien verrouillé partenaire.</p>
+          <h2>VPN Checker <span class="badge">Link locker</span></h2>
+          <p>Utility/app flow → locked partner link.</p>
+          <div class="card-actions">
+            <a class="btn btn-card aff-link" href="/apps/vpn-checker/" aria-label="Start VPN check">
+              Start check
+            </a>
+          </div>
         </div>
-      </a>
+      </article>
 
-      <a class="card aff-link" href="/gaming/skins-guide/" aria-label="Guide Skins, Content locker">
+      <!-- Card 3 -->
+      <article class="card" tabindex="0">
         <div class="card-icon card-icon--pad" aria-hidden="true">
           <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.6">
-            <rect x="2" y="9" width="20" height="8" rx="4"/>
-            <circle cx="8" cy="13" r="1.5"/><path d="M6 13h4M8 11v4"/>
-            <circle cx="16.5" cy="12" r="0.8"/><circle cx="18.5" cy="14" r="0.8"/>
-            <circle cx="18.5" cy="10" r="0.8"/><circle cx="20.5" cy="12" r="0.8"/>
+            <rect x="2" y="9" width="20" height="8" rx="4" />
+            <circle cx="8" cy="13" r="1.5" />
+            <path d="M6 13h4M8 11v4" />
+            <circle cx="16.5" cy="12" r="0.8" />
+            <circle cx="18.5" cy="14" r="0.8" />
+            <circle cx="18.5" cy="10" r="0.8" />
+            <circle cx="20.5" cy="12" r="0.8" />
           </svg>
         </div>
         <div class="card-body">
-          <h2>Guide Skins <span class="muted">(Content locker)</span></h2>
-          <p>PDF de conseils légitimes (pas de cheats/hacks).</p>
+          <h2>Skins Guide <span class="badge">Content locker</span></h2>
+          <p>Legit tips PDF (no cheats/hacks).</p>
+          <div class="card-actions">
+            <a class="btn btn-card aff-link" href="/gaming/skins-guide/" aria-label="View Skins Guide">
+              View preview
+            </a>
+          </div>
         </div>
-      </a>
+      </article>
+
     </section>
   </main>
 
   <footer class="wrap footer">
-    <div>© <span id="year"></span> AdsFlowHub • <a href="mailto:contact@adsflowhub.com">contact@adsflowhub.com</a></div>
-    <nav aria-label="Liens légaux">
-      <a href="/legal/mentions.html">Mentions</a><span aria-hidden="true">·</span>
-      <a href="/legal/privacy.html">Confidentialité</a><span aria-hidden="true">·</span>
+    <div>
+      © <span id="year"></span> AdsFlowHub •
+      <a href="mailto:contact@adsflowhub.com">contact@adsflowhub.com</a>
+    </div>
+    <nav aria-label="Legal links">
+      <a href="/legal/mentions.html">Legal notice</a><span aria-hidden="true">·</span>
+      <a href="/legal/privacy.html">Privacy</a><span aria-hidden="true">·</span>
       <a href="/legal/cookies.html">Cookies</a>
     </nav>
   </footer>
 
-  <script src="/assets/js/cookie-consent.js" defer></script>
-  <script src="/assets/js/tracking.js" defer></script>
-  <script src="/assets/js/locker-demo.js" defer></script>
-  <script>document.addEventListener('DOMContentLoaded',()=>{const y=document.getElementById('year'); if(y) y.textContent=new Date().getFullYear()});</script>
+  <script>
+    // Utilities
+    const $ = (s, r=document) => r.querySelector(s);
+    const $$ = (s, r=document) => [...r.querySelectorAll(s)];
+
+    // Dynamic year
+    document.addEventListener('DOMContentLoaded', () => {
+      const y = document.getElementById('year');
+      if (y) y.textContent = new Date().getFullYear();
+    });
+
+    // UTM/subid propagation to partner links
+    (function propagateQuery() {
+      const q = window.location.search;
+      if (!q) return;
+      const incoming = new URLSearchParams(q);
+      if ([...incoming.keys()].length === 0) return;
+      $$('.aff-link').forEach(a => {
+        const url = new URL(a.getAttribute('href'), window.location.origin);
+        incoming.forEach((v,k) => { if(!url.searchParams.has(k)) url.searchParams.set(k,v); });
+        a.setAttribute('href', url.pathname + (url.search ? url.search : ''));
+      });
+    })();
+
+    // Cookie banner (simple demo)
+    (function cookieConsent(){
+      const banner = $('#cc');
+      if (!banner) return;
+      const KEY = 'afh_cookie_consent';
+      const state = localStorage.getItem(KEY);
+      if (!state) banner.hidden = false;
+      $('#cc-accept')?.addEventListener('click', () => (localStorage.setItem(KEY,'accepted'), banner.hidden = true));
+      $('#cc-decline')?.addEventListener('click', () => (localStorage.setItem(KEY,'declined'), banner.hidden = true));
+    })();
+  </script>
 </body>
 </html>

@@ -1,24 +1,166 @@
-<!doctype html><html lang="fr"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Guide Skins – Téléchargement</title>
-<meta name="description" content="Guide PDF légitime (pas de cheats/hacks). Déverrouillage via partenaire.">
-<link rel="stylesheet" href="/assets/css/styles.css"></head><body>
-<div class="cc" id="cc" hidden><div class="cc-inner"><div>Cookies pour mesure d’audience. <a class="link" href="/legal/cookies.html">En savoir plus</a>.</div><div class="actions"><button class="btn btn-secondary" id="cc-decline">Refuser</button><button class="btn" id="cc-accept">Accepter</button></div></div></div>
-<header class="hero"><div class="wrap hero__inner">
-  <span class="badge">Content Locker</span>
-  <h1 class="title">Guide Skins – Accès restreint</h1>
-  <p class="sub">Conseils légitimes. Aucun cheat/hack. Respect des marques.</p>
-</div></header>
-<main class="wrap">
-  <section class="card">
-    <h2>Prévisualisation</h2>
-    <div class="overlay"><p class="blur">• Chapitre 1 : Politiques éditeurs<br>• Chapitre 2 : Marketplaces officielles<br>• Chapitre 3 : Bonnes pratiques & sécurité<br>• Chapitre 4 : Ressources</p></div>
-    <p class="note">Le PDF complet est verrouillé. Déverrouillez pour télécharger.</p>
-    <!-- Remplacez par votre Content locker OGAds -->
-    <p><a class="btn aff-link" href="https://OGADS_YOUR_CONTENT_LOCKER" data-link-label="CTA_UnlockContent">Déverrouiller & Télécharger</a></p>
-  </section>
-</main>
-<footer class="wrap footer"><div>© <span id="year"></span> AdsFlowHub</div><nav><a href="/legal/mentions.html">Mentions</a> · <a href="/legal/privacy.html">Confidentialité</a> · <a href="/legal/cookies.html">Cookies</a></nav></footer>
-<script src="/assets/js/cookie-consent.js" defer></script><script src="/assets/js/tracking.js" defer></script><script src="/assets/js/locker-demo.js" defer></script>
-<script>document.addEventListener('DOMContentLoaded',()=>{document.getElementById('year').textContent=new Date().getFullYear()});</script>
-</body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Skins Guide – Locked Download</title>
+  <meta name="description" content="Legit tips PDF (no cheats/hacks). Unlock via a verified partner.">
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+  <meta name="color-scheme" content="light dark">
+  <style>
+    /* ---- Page-specific polish (uses your global tokens) ------------------ */
+    .pill{display:inline-block;padding:6px 10px;border-radius:999px;font-weight:700;
+      font-size:12px;background:color-mix(in oklab,var(--brand) 16%, white);
+      color:color-mix(in oklab,var(--brand) 85%, black)}
+    .hero .title{font-size:clamp(36px,6vw,56px)}
+    .cta-lg{padding:14px 22px;border-radius:12px;font-weight:800}
+    .note{color:var(--muted);margin-top:8px}
+    /* panels & cards */
+    .panel{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px;box-shadow:0 8px 24px rgba(0,0,0,.04)}
+    .panel + .panel{margin-top:14px}
+    .center{text-align:center}
+    /* preview block */
+    .preview{position:relative;border:1px dashed color-mix(in oklab,var(--ink) 18%, transparent);
+      border-radius:16px;padding:16px;background:linear-gradient(0deg,rgba(15,23,42,.02),rgba(15,23,42,.02))}
+    .blurred{filter:blur(5px);user-select:none;pointer-events:none}
+    .preview::after{content:"Locked preview";position:absolute;right:10px;top:10px;
+      font-size:12px;color:var(--muted)}
+    /* steps */
+    .steps{display:grid;gap:14px;margin:8px 0 0}
+    .step{display:grid;grid-template-columns:auto 1fr;gap:12px;align-items:start}
+    .num{display:grid;place-items:center;width:32px;height:32px;border-radius:999px;
+      background:linear-gradient(135deg,var(--brand),#7c3aed);color:#fff;font-weight:800}
+    .step h3{margin:0 0 4px;font-size:16px}
+    .step p{margin:0;color:var(--muted)}
+    /* disclosure */
+    .disclosure{border-left:4px solid var(--brand);background:linear-gradient(0deg,rgba(37,99,235,.06),rgba(37,99,235,.06))}
+    .disclosure h2{display:flex;gap:8px;align-items:center}
+    .disclosure svg{width:18px;height:18px;color:var(--brand)}
+    /* FAQ */
+    .faq details{border:1px solid var(--line);border-radius:12px;padding:12px;background:var(--card)}
+    .faq details + details{margin-top:10px}
+    .faq summary{cursor:pointer;font-weight:700;list-style:none}
+    .faq summary::-webkit-details-marker{display:none}
+    .faq summary::after{content:"+";float:right;color:var(--muted)}
+    .faq details[open] summary::after{content:"–"}
+  </style>
+</head>
+<body>
+  <!-- Cookie banner (demo) -->
+  <div class="cc" id="cc" hidden>
+    <div class="cc-inner">
+      <div>Cookies are used for experience & analytics. <a class="link" href="/legal/cookies.html">Learn more</a>.</div>
+      <div class="actions"><button class="btn btn-secondary" id="cc-decline" type="button">Decline</button><button class="btn" id="cc-accept" type="button">Accept</button></div>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <header class="hero" role="banner">
+    <div class="wrap hero__inner">
+      <span class="pill">Content Locker</span>
+      <h1 class="title">Skins Guide – Restricted Access</h1>
+      <p class="sub">Legit, brand-safe tips. No cheats, hacks, or trademark misuse.</p>
+      <p class="center" style="margin:16px 0 4px">
+        <!-- Replace with your OGAds Content Locker -->
+        <a class="btn cta-lg aff-link" href="https://OGADS_YOUR_CONTENT_LOCKER" data-link-label="CTA_UnlockContent_Top">Unlock & Download</a>
+      </p>
+      <p class="sub note center">You’ll unlock the file on a secure partner page.</p>
+    </div>
+  </header>
+
+  <!-- BODY -->
+  <main class="wrap" id="main">
+    <!-- Preview -->
+    <section class="panel">
+      <h2 style="margin-top:0">Preview</h2>
+      <div class="preview">
+        <p class="blurred">
+          • Chapter 1: Publisher policies<br>
+          • Chapter 2: Official marketplaces<br>
+          • Chapter 3: Best practices & safety<br>
+          • Chapter 4: Resources & links
+        </p>
+      </div>
+      <p class="note" style="margin-top:10px">Full PDF is locked. Complete a quick action with our partner to unlock the download.</p>
+      <p class="center" style="margin-top:10px">
+        <a class="btn cta-lg aff-link" href="https://OGADS_YOUR_CONTENT_LOCKER" data-link-label="CTA_UnlockContent_Mid">Unlock & Download</a>
+      </p>
+    </section>
+
+    <!-- How unlocking works -->
+    <section class="panel">
+      <h2 style="margin-top:0">How unlocking works</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="num">1</div>
+          <div>
+            <h3>Click “Unlock & Download”</h3>
+            <p>You’ll continue on the partner’s secure page.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="num">2</div>
+          <div>
+            <h3>Complete the required action</h3>
+            <p>Example: quick sign-up or app trial — follow the instructions shown.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="num">3</div>
+          <div>
+            <h3>Download the PDF</h3>
+            <p>Once confirmed by the partner, you’ll get access to the file.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Disclosure -->
+    <section class="panel disclosure">
+      <h2>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+          <circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h2v4h-2z"/>
+        </svg>
+        Transparency
+      </h2>
+      <p style="margin:8px 0 0">No misleading promises. One account per person as per rules. Real traffic only—no bots or proxies. This is an independent guide and is not endorsed by any game publisher.</p>
+    </section>
+
+    <!-- FAQ -->
+    <section class="panel faq">
+      <h2 style="margin-top:0">Quick FAQ</h2>
+      <details>
+        <summary>Is this guide allowed?</summary>
+        <div class="content"><p>Yes—this is a brand-safe tips document. It does not include cheats, hacks, or exploit instructions.</p></div>
+      </details>
+      <details>
+        <summary>Will I be charged?</summary>
+        <div class="content"><p>Visiting this page is free. The partner may require an action (e.g., registration). Always read the terms on the partner page.</p></div>
+      </details>
+      <details>
+        <summary>Where is the file hosted?</summary>
+        <div class="content"><p>Access is managed by our partner’s locker. After completion, you’ll receive a direct download link or the file itself.</p></div>
+      </details>
+      <p class="center" style="margin-top:14px">
+        <a class="btn cta-lg aff-link" href="https://OGADS_YOUR_CONTENT_LOCKER" data-link-label="CTA_UnlockContent_Bottom">Unlock & Download</a>
+      </p>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="wrap footer">
+    <div>© <span id="year"></span> AdsFlowHub</div>
+    <nav><a href="/legal/mentions.html">Legal notice</a> · <a href="/legal/privacy.html">Privacy</a> · <a href="/legal/cookies.html">Cookies</a></nav>
+  </footer>
+
+  <script src="/assets/js/cookie-consent.js" defer></script>
+  <script src="/assets/js/tracking.js" defer></script>
+  <script src="/assets/js/locker-demo.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded',()=> {
+      const y = document.getElementById('year');
+      if (y) y.textContent = new Date().getFullYear();
+    });
+  </script>
+</body>
+</html>
