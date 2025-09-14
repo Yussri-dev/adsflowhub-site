@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AdsFlowHub • Hub d’offres</title>
+  <meta name="description" content="Choisissez une page et commencez. Les paramètres UTM et subid sont propagés automatiquement.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+
+  <!-- Cookies (démo) -->
+  <div class="cc" id="cc" hidden>
+    <div class="cc-inner">
+      <div>Cookies pour expérience & mesure d’audience. <a class="link" href="/legal/cookies.html">En savoir plus</a>.</div>
+      <div class="actions">
+        <button class="btn btn-secondary" id="cc-decline" type="button">Refuser</button>
+        <button class="btn" id="cc-accept" type="button">Accepter</button>
+      </div>
+    </div>
+  </div>
+
+  <header class="hero" role="banner">
+    <div class="wrap hero__inner">
+      <div class="brand"><span class="brand-logo" aria-hidden="true"></span><strong>AdsFlowHub</strong></div>
+      <h1 class="title">Bienvenue — <span class="grad">sélection d’offres vérifiées</span></h1>
+      <p class="sub">Sélectionnez une page. <code>UTM</code> et <code>subid</code> seront transmis à vos redirections partenaires.</p>
+    </div>
+  </header>
+
+  <main id="main" class="wrap">
+    <section aria-label="Liens" class="cards">
+      <a class="card aff-link" href="/rewards/fr-amazon-giftcards/" aria-label="Cartes cadeaux Amazon, URL locker">
+        <div class="card-icon card-icon--gift" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.6">
+            <path d="M20 12v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-8"/><path d="M4 8h16v4H4zM12 22V8"/>
+            <path d="M12 8c1.5-2.5-.5-4-2-4s-2.5 1.5-2 3 4 1 4 1zM12 8c-1.5-2.5.5-4 2-4s2.5 1.5 2 3-4 1-4 1z"/>
+          </svg>
+        </div>
+        <div class="card-body">
+          <h2>Cartes cadeaux Amazon <span class="muted">(URL locker)</span></h2>
+          <p>Pré-lander + divulgation claire. Non affilié à Amazon.</p>
+        </div>
+      </a>
+
+      <a class="card aff-link" href="/apps/vpn-checker/" aria-label="VPN Checker, Link locker">
+        <div class="card-icon card-icon--shield" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.6">
+            <path d="M12 2l7 3v6c0 5-3.5 9-7 11-3.5-2-7-6-7-11V5z"/><path d="M9 12l2 2 4-4"/>
+          </svg>
+        </div>
+        <div class="card-body">
+          <h2>VPN Checker <span class="muted">(Link locker)</span></h2>
+          <p>Flux utilitaire/app → lien verrouillé partenaire.</p>
+        </div>
+      </a>
+
+      <a class="card aff-link" href="/gaming/skins-guide/" aria-label="Guide Skins, Content locker">
+        <div class="card-icon card-icon--pad" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.6">
+            <rect x="2" y="9" width="20" height="8" rx="4"/>
+            <circle cx="8" cy="13" r="1.5"/><path d="M6 13h4M8 11v4"/>
+            <circle cx="16.5" cy="12" r="0.8"/><circle cx="18.5" cy="14" r="0.8"/>
+            <circle cx="18.5" cy="10" r="0.8"/><circle cx="20.5" cy="12" r="0.8"/>
+          </svg>
+        </div>
+        <div class="card-body">
+          <h2>Guide Skins <span class="muted">(Content locker)</span></h2>
+          <p>PDF de conseils légitimes (pas de cheats/hacks).</p>
+        </div>
+      </a>
+    </section>
+  </main>
+
+  <footer class="wrap footer">
+    <div>© <span id="year"></span> AdsFlowHub • <a href="mailto:contact@adsflowhub.com">contact@adsflowhub.com</a></div>
+    <nav aria-label="Liens légaux">
+      <a href="/legal/mentions.html">Mentions</a><span aria-hidden="true">·</span>
+      <a href="/legal/privacy.html">Confidentialité</a><span aria-hidden="true">·</span>
+      <a href="/legal/cookies.html">Cookies</a>
+    </nav>
+  </footer>
+
+  <script src="/assets/js/cookie-consent.js" defer></script>
+  <script src="/assets/js/tracking.js" defer></script>
+  <script src="/assets/js/locker-demo.js" defer></script>
+  <script>document.addEventListener('DOMContentLoaded',()=>{const y=document.getElementById('year'); if(y) y.textContent=new Date().getFullYear()});</script>
+</body>
+</html>
